@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #333; color: #fff; padding: 10px 0; text-align: center; }
+        nav { background-color: #444; padding: 10px; }
+        nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        main { padding: 20px; }
+        footer { background-color: #333; color: #fff; text-align: center; padding: 10px 0; position: fixed; width: 100%; bottom: 0; }
+        .car-images { display: flex; gap: 10px; }
+        .car-images img { width: 200px; height: auto; }
+        .specifications, .price-estimation { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Car Details</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#car_details">Car Details</a>
+    </nav>
+    <main>
+        <section class="car-images">
+            <h2>Car Images</h2>
+            <img src="car1.jpg" alt="Car Image 1">
+            <img src="car2.jpg" alt="Car Image 2">
+            <img src="car3.jpg" alt="Car Image 3">
+        </section>
+        <section class="specifications">
+            <h2>Detailed Specifications</h2>
+            <ul>
+                <li>Engine: V8</li>
+                <li>Horsepower: 450hp</li>
+                <li>Fuel Type: Gasoline</li>
+                <li>Transmission: Automatic</li>
+            </ul>
+        </section>
+        <section class="price-estimation">
+            <h2>Price Estimation</h2>
+            <p>The estimated price for this car is $50,000.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Car Dealership. All rights reserved.</p>
+    </footer>
+</body>
+</html>
