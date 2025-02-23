@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Marketplace</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+        }
+        nav a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #003d7a;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            background-color: #e0f7fa;
+            padding: 20px;
+        }
+        .hero input[type="text"] {
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .hero button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .hero button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .featured-cars {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .car-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 300px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+        .car-card:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .car-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .car-card .details {
+            padding: 15px;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Car Marketplace</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="search_listings.html">Search Listings</a>
+        <a href="car_details.html">Car Details</a>
+        <a href="sell_your_car.html">Sell Your Car</a>
+        <a href="user_profile.html">User Profile</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="about_us.html">About Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+    <div class="hero">
+        <input type="text" placeholder="Search for cars...">
+        <button>Search</button>
+    </div>
+    <div class="featured-cars">
+        <div class="car-card">
+            <img src="car1.jpg" alt="Car 1">
+            <div class="details">
+                <h3>Car Model 1</h3>
+                <p>Price: $20,000</p>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="car2.jpg" alt="Car 2">
+            <div class="details">
+                <h3>Car Model 2</h3>
+                <p>Price: $25,000</p>
+            </div>
+        </div>
+        <!-- More car cards can be added here -->
+    </div>
+    <footer>
+        <p>&copy; 2023 Car Marketplace. All rights reserved.</p>
+    </footer>
+</body>
+</html>
