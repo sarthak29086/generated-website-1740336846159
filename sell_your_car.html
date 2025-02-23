@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Car</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #333; color: #fff; padding: 10px 0; text-align: center; }
+        nav { background-color: #444; padding: 10px; }
+        nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        main { padding: 20px; }
+        footer { background-color: #333; color: #fff; text-align: center; padding: 10px 0; position: fixed; width: 100%; bottom: 0; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input[type="text"], input[type="file"] { width: 100%; padding: 8px; box-sizing: border-box; }
+        button { background-color: #28a745; color: #fff; padding: 10px 15px; border: none; cursor: pointer; }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sell Your Car</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Buy a Car</a>
+        <a href="#">Sell Your Car</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <main>
+        <h2>List Your Car for Sale</h2>
+        <p>A page where users can list their cars for sale.</p>
+        <form id="sellCarForm">
+            <div class="form-group">
+                <label for="carDetails">Car Details:</label>
+                <input type="text" id="carDetails" name="carDetails" placeholder="Enter car details">
+            </div>
+            <div class="form-group">
+                <label for="carImages">Upload Images:</label>
+                <input type="file" id="carImages" name="carImages" multiple>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Car Marketplace</p>
+    </footer>
+    <script>
+        document.getElementById('sellCarForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted!');
+        });
+    </script>
+</body>
+</html>
